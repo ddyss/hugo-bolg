@@ -29,7 +29,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.token_sc }}
-          external_repository: ddyss/hugo-blog
+          external_repository: ddyss/hugo-bolg
           publish_branch: main
           publish_dir: ./public
           commit_message: 🚀 Auto deploy from GitHub Actions
