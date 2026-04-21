@@ -1,0 +1,8 @@
+{{ if .IsNamedParams }}
+<blockquote>
+  <p>{{ .Inner }}</p>
+  <footer>
+    — {{ .Get "author" }}{{ with .Get "source" }}, <cite>{{ if $.Get "url" }}<a href="{{ $.Get "url" }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</cite>{{ end }}
+  </footer>
+</blockquote>
+{{ end }}
